@@ -12,7 +12,7 @@ return(
             <FaInstagram size={24} color="white" className='md:ml-[670px] ml-[150px]' />
             </a>
       
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/yumna-shaikh-b90191337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
             <FaFacebook size={24} color="white" />
             </a>
             </div>
