@@ -58,11 +58,11 @@ const blogPosts: Posts[] = [
 
 export default function Blogs() {
   return (
-    <div id="blog-posts" className="container mx-auto p-10 ">
+    <div id="blog-posts" className="container mx-auto md:p-10 ">
       <h2 className="text-5xl font font-extralight flex items-center justify-center text-white h-20 bg-black mb-8">
         BLOGS
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:p-0 p-5 gap-8">
         {blogPosts.map((post) => (
           <Link
             key={post.slug}

@@ -4,16 +4,16 @@ import {
     SheetContent,
     SheetTrigger,
   } from "@/components/ui/sheet"
-  import { AlignRight } from 'lucide-react';
+  import {AlignJustifyIcon } from 'lucide-react';
   import Link from "next/link";
   
 export default function Header(){
     return(
-        <header className="flex justify-between text-center md:p-10 items-center">
-<Button className="bg-white rounded-none border-black text-black px-11 py-5 hover:bg-black hover:text-white border-[1px] "><Link href={"/"}>Subscribe</Link></Button>
-<h1 className="text-7xl text-black font-bold">VOID</h1>
+        <header className="flex  justify-between md:p-10 items-center">
+<Button className="bg-white rounded-none border-black text-black px-11 py-5 hover:bg-black hover:text-white border-[1px] md:flex hidden"><Link href={"/"}>Subscribe</Link></Button>
+<h1 className="text-7xl text-black md:ml-0 ml-[107px] font-bold">VOID</h1>
 <Sheet >
-  <SheetTrigger><h1 className="md:flex hidden text-5xl font-bold  text-black">Menu</h1><AlignRight className="md:hidden flex text-black" size={28}/></SheetTrigger>
+  <SheetTrigger><h1 className="md:flex hidden text-5xl font-bold  text-black">Menu</h1><AlignJustifyIcon className="md:hidden flex mr-3 text-black" size={28}/></SheetTrigger>
   <SheetContent>
 <nav className="text-black text-3xl text-center font-semibold">
     <ul className="space-y-5  ">

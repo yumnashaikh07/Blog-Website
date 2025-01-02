@@ -3,17 +3,18 @@ import React from "react";
 import Image from "next/image";
 export default function About() {
   return (
-    <div className=" flex justify-between mx-auto p-14 space-x-3">
+    <div className=" md:flex md:justify-between grid grid-cols-1 mx-auto md:p-14 md:space-x-3">
       <Image
         src={"/about1.jpeg"}
         width={700}
         height={700}
         alt="about image"
         priority
+        className="md:mt-0 mt-9"
       />
 
       <section className="flex flex-col space-y-3">
-        <section className=" h-[500px] w-[500px] py-10">
+        <section className=" md:h-[500px] md:w-[500px] py-10">
           <div className="container mx-auto px-11">
             <h2 className="text-5xl font-bold text-center mb-10">About Us</h2>
             <p className="text-base text-gray-700  mb-6">
@@ -33,7 +34,7 @@ export default function About() {
         </section>
 
         {/* Contact Form Section */}
-        <section id="contact" className="bg-black h-[500px]  w-[500px]  ">
+        <section id="contact" className="bg-black h-[500px]  md:w-[500px]  ">
           <div className="container mx-auto py-14 px-16">
             <h2 className="text-3xl font-bold text-center text-white mb-8">
               Contact Us
