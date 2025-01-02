@@ -17,7 +17,7 @@ export default function Home() {
         <div className="bg-black text-white py-12 text-center md:w-[637px] md:h-[611px]">
           <h1 className="text-2xl font-semibold">FEATURED STORY</h1> 
           <h5 className="text-sm font-extralight mt-10 md:mt-20">Jun 32, 2023 . 2 min read</h5>
-          <h1 className="text-7xl font mt-11"><Link href={"/"}>A SURREAL CONCRETE DREAM</Link></h1>
+          <h1 className="md:text-7xl text-6xl font mt-11"><Link href={"/"}>A SURREAL CONCRETE DREAM</Link></h1>
         </div>
       </div>
       <div className="border-b-[1px] border-white flex md:hidden"></div>
