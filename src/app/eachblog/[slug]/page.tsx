@@ -35,3 +35,10 @@
 //   </div>
 // )
 // }
+export default function BlogPostPage() {
+  return (
+    <div>
+        <main></main>
+    </div>
+  )
+}
