@@ -1,13 +1,17 @@
+'use client'
 import { Button } from "@/components/ui/button"
 import {
     Sheet,
     SheetContent,
     SheetTrigger,
   } from "@/components/ui/sheet"
+import useInvalidPaths from "@/lib/invalid-paths";
   import {AlignJustifyIcon } from 'lucide-react';
   import Link from "next/link";
   
-export default function Header(){
+export default function Header(){  
+  const invalidPaths :boolean = useInvalidPaths();
+  if(invalidPaths)return <></>
     return(
         <header className="flex  justify-between md:p-10 items-center">
 <Button className="bg-white rounded-none border-black text-black px-11 py-5 hover:bg-black hover:text-white border-[1px] md:flex hidden"><Link href={"/"}>Subscribe</Link></Button>
