@@ -1,13 +1,15 @@
+//This Page is for Blog Cards Only
+// I CAN FETCH DYNAMIC DATA TOO (FROM API) OR SANITY IN THE SAME WAY AS I DID IN [slug].tsx 
 import Image from "next/image";
 import Link from "next/link";
 
-interface Posts {
+interface BlogCardType {
   slug: string;
   title: string;
   image: string;
   description: string;
 }
-const blogPosts: Posts[] = [
+const BlogCards: BlogCardType [] = [
   {
     slug: "1",
     title: "The Rise of Minimalism in Fashion",
@@ -46,25 +48,22 @@ const blogPosts: Posts[] = [
     image: "/image1.png",
     description: "Mar 32, 2024 . 2 min read",
   },
+  
+
 ];
 
 export default function Blogs() {
   return (
-    <div id="blog-posts" className="container mx-auto md:p-10 ">
+    <div id="blog-posts" className="container mx-auto md:p-10">
       <h2 className="text-5xl font font-extralight flex items-center justify-center text-white h-20 bg-black mb-8">
         BLOGS
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:p-0 p-5 gap-8">
-        {blogPosts.map((post) => {
-          return (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="border rounded-lg overflow-hidden shadow-md block"
-            >
+        {BlogCards.map((BlogCard) => (
+          <Link key={BlogCard.slug} href={`/blog/${BlogCard.slug}` } className="border rounded-lg overflow-hidden shadow-md block">
               <Image
-                src={post.image}
-                alt={post.title}
+                src={BlogCard.image}
+                alt={BlogCard.title}
                 width={500}
                 height={300}
                 className="w-full h-56 object-cover"
@@ -72,13 +71,10 @@ export default function Blogs() {
                 blurDataURL="/path/to/low-res-image.jpg"
               />
               <div className="p-4">
-                <p className="text-sm "> {post.description}</p>
-                <h3 className="text-xl font-bold">{post.title}</h3>
+                <h3 className="text-xl font-bold">{BlogCard.title}</h3>
+                <p className="text-sm text-gray-500">{BlogCard.description}</p>
               </div>
-            </Link>
-          );
-        })}
+          </Link>
+        ))}
       </div>
-    </div>
-  );
-}
+    </div>)}

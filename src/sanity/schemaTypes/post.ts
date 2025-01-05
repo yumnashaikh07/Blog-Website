@@ -1,18 +1,18 @@
 import { defineField } from "sanity"
 export default {
-    name: 'blogPost',
+    name: 'blogPost', //By this we fetch data through GROQ Query in Sanity
     title: 'Blog Post',
     type: 'document',
     fields: 
     [   defineField({
-        name: 'title',
+        name: 'title', //By this we fetch data in [slug].tsx
         title: 'Title',
         description: 'This is main title of the blog post with big font size',
         type: 'string',
        
     }),
         defineField({
-            name:'image',
+            name:'image', //By this we fetch data in [slug].tsx
             title:'Image',
             type:'image',
             options:{
@@ -20,7 +20,7 @@ export default {
             }
         }) ,
         defineField({
-            name:'description',
+            name:'description', //By this we fetch data in [slug].tsx
             title:'Description',
             description:'Here i will write same content for all my blog posts',
             type:'text',
@@ -28,7 +28,7 @@ export default {
         })
         ,
         defineField({
-            name: 'slug',
+            name: 'slug', //By this we fetch data in [slug].tsx
             title: 'Slug',
             type: 'slug',
             options: {
@@ -36,7 +36,7 @@ export default {
             }
         }),
             defineField({
-                name:'Content',
+                name:'Content', //By this we fetch data in [slug].tsx
                 title:'Content',
                 type:'array',
                 of:[{type:'block'}],
