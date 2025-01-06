@@ -45,7 +45,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       </div>
       <div className="border-b-2 mt-5 w-full border-gray-500 mx-auto"></div>
       <div className="border-b-2 mt-1 w-full border-gray-500 mx-auto"></div>
-      <div className="flex justify-between mx-auto space-x-[277px] md:space-x-[900px]  mb-20 items-center">
+      <div className="flex justify-between mx-auto space-x-[250px] md:space-x-[900px]  mb-20 items-center">
       <Link href={"/blog"} ><ArrowBigLeft size={47} strokeWidth={1.25} className=" transition-transform duration-500 hover:scale-150 "/></Link>
       <Link href={"/"} ><HomeIcon size={35} strokeWidth={1.5} className=" transition-transform duration-500 hover:scale-150 "/></Link>
       </div>

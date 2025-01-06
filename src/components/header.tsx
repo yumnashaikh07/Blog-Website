@@ -13,7 +13,7 @@ export default function Header() {
       <Button className=" border-black text-black hover:text-white  px-11 py-5 bg-white  hover:bg-black border-[1px] md:flex hidden">
         <Link href={"/"}>Subscribe</Link>
       </Button>
-      <h1 className="text-7xl text-black md:ml-0 ml-[113px] font-bold">VOID</h1>
+      <h1 className="text-7xl text-black md:ml-0 ml-[100px] font-bold">VOID</h1>
       <Sheet>
         <SheetTrigger>
           <h1 className="md:flex hidden text-5xl font-bold  text-black">
